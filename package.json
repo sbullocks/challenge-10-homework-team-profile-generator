@@ -1,5 +1,24 @@
 {
+  "name": "challenge-10-homework-team-profile-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Employee.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sbullocks/challenge-10-homework-team-profile-generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sbullocks/challenge-10-homework-team-profile-generator/issues"
+  },
+  "homepage": "https://github.com/sbullocks/challenge-10-homework-team-profile-generator#readme",
   "dependencies": {
-    "inquirer": "^8.2.4"
+    "inquirer": "^8.2.4",
+    "jest": "^24.9.0"
   }
 }
