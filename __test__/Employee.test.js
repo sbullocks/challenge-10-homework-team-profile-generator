@@ -1,5 +1,3 @@
-const { it } = require('node:test');
-const { describe } = require('yargs');
 const Employee = require('../lib/employee.classes');
 
 describe('Employee', () => {
@@ -27,7 +25,7 @@ describe('Employee', () => {
         it('should return employee name', () => {
             const name = 'Stephen';
 
-            const newName = Employee(name, '123', 'sbullocks@gmail.com').getName();
+            const newName = new Employee(name, '123', 'sbullocks@gmail.com').getName();
 
             expect(name).toEqual(newName);
         });
@@ -45,21 +43,21 @@ describe('Employee', () => {
 
     describe('getEmail', () => {
         it('should return an employee email', () => {
-            const id ='sbullocks@gmail.com';
+            const email ='sbullocks@gmail.com';
 
             const newEmail = new Employee('Stephen', '123', email).getEmail();
 
-            expect(id).toEqual(newEmail);
+            expect(email).toEqual(newEmail);
         });
     });
 
     describe('getRole', () => {
         it('should return an employee role', () => {
-            const id ='Employee';
+            const role ='Employee';
 
             const newRole = new Employee('Stephen', '123', 'sbullocks@gmail.com').getRole();
 
-            expect(id).toEqual(newRole);
+            expect(role).toEqual(newRole);
         });
     });
 })
