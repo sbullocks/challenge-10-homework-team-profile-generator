@@ -7,7 +7,8 @@ function generateSite(team) {
         <div class="card col-9 col-lg-3">
                         <div class="card-header">
                             ${manager.getName()}, ${manager.getRole()}
-                        </div>
+                            <i class="fa-solid fa-building-circle-check"></i>
+                            </div>
                         <div class="card-body">
                             <ul class="list-group">
                                 <li class="list-group-item">ID: ${manager.getId()}</li>
@@ -26,6 +27,7 @@ function generateSite(team) {
         <div class="card col-9 col-lg-3">    
                         <div class="card-header">
                             ${engineer.getName()}, ${engineer.getRole()}
+                            <i class="fa-solid fa-space-station-moon-construction"></i>
                         </div>
                         <div class="card-body">
                             <ul class="list-group">
@@ -45,6 +47,7 @@ function generateSite(team) {
         <div class="card col-9 col-lg-3">
                         <div class="card-header">
                             ${intern.getName()}, ${intern.getRole()}
+                            <i class="fa-sharp fa-solid fa-user-graduate"></i>
                         </div>
                         <div class="card-body">
                             <ul class="list-group">
@@ -84,13 +87,14 @@ module.exports = team => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Team Profile Generator</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../dist/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+        <link rel="stylesheet" href="../dist/styles.css">
     </head>
     <body>
     <!----- Jumbotron ----->    
         <div class="jumbotron jumbotron-fluid">
             <div class="container">
-              <h1 class="display-4">My Team</h1>
+              <h1 class="display-4"><b>My Team</b></h1>
             </div>
         </div>
     <!----- Team Cards -----> 
