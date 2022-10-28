@@ -3,7 +3,7 @@ const Intern = require('../lib/intern.classes');
 describe('Intern', () => {
     describe('constructor', () => {
         it('should return an object with three values when called with new keyword', () => {
-            const obj = new Employee();
+            const obj = new Intern();
             
             expect('name' in obj).toEqual(true);
             expect('id' in obj).toEqual(true);
@@ -14,7 +14,7 @@ describe('Intern', () => {
             const id = '123';
             const email = 'sbullocks@gmail.com';
 
-            const obj = new Employee(name, id, email);
+            const obj = new Intern(name, id, email);
 
             expect(obj.name).toEqual(name);
             expect(obj.id).toEqual(id);

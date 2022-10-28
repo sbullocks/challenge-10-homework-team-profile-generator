@@ -6,7 +6,7 @@ describe('Engineer', () => {
     // Test getRole method.
     describe('getRole', () => {
     it('should return employee role', () => {
-            const role = 'Engineer
+            const role = 'Engineer'
             
             const newRole = new Engineer().getRole();
 
