@@ -27,7 +27,7 @@ function generateSite(team) {
         <div class="card col-9 col-lg-3">    
                         <div class="card-header">
                             ${engineer.getName()}, ${engineer.getRole()}
-                            <i class="fa-solid fa-space-station-moon-construction"></i>
+                            <i class="fa-solid fa-helmet-safety"></i>
                         </div>
                         <div class="card-body">
                             <ul class="list-group">
