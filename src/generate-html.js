@@ -97,7 +97,7 @@ module.exports = (team) => {
         <!-- Implemented bootstrap for framework layout. -->
         <div class="jumbotron jumbotron-fluid">
           <div class="container">
-            <h1 class="display-4"><b>My Team</b></h1>
+            <h1 class="team"><b>My Team</b></h1>
           </div>
         </div>
     
