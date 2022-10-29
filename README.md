@@ -24,7 +24,7 @@
 
   ## Usage
   N/A
-  ![screenshot of my README.md code](assetsimagesScreenshot 2022-10-23 133915.png)
+  ![screenshot of working html page with worker cards](./images/Screenshot%202022-10-28%20214544.png)
 
   ## Contribution
   N/A

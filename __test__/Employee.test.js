@@ -1,67 +1,75 @@
 // Brings in the employee class from classes file in lib.
-const Employee = require('../lib/employee.classes');
+const Employee = require("../lib/employee.classes");
 
-// Begins testing.
-describe('Employee', () => {
-    // Test constructor method.
-    describe('constructor', () => {
-        it('should return an object with three values when called with new keyword', () => {
-            const obj = new Employee();
-            
-            expect('name' in obj).toEqual(true);
-            expect('id' in obj).toEqual(true);
-            expect('email' in obj).toEqual(true);
-        });
-        it('should set name, id, and email when created', () => {
-            const name = 'Stephen';
-            const id = '123';
-            const email = 'sbullocks@gmail.com';
+// Begins the test.
+// Every describe() section begins a new test for that specific method.
+describe("Employee", () => {
+  describe("constructor", () => {
+    it("Should return an object with three values when called with new keyword.", () => {
+      const obj = new Employee();
 
-            const obj = new Employee(name, id, email);
-
-            expect(obj.name).toEqual(name);
-            expect(obj.id).toEqual(id);
-            expect(obj.email).toEqual(email);
-        });
+      expect("name" in obj).toEqual(true);
+      expect("id" in obj).toEqual(true);
+      expect("email" in obj).toEqual(true);
     });
-    // Test getName method.
-    describe('getName', () => {
-        it('should return employee name', () => {
-            const name = 'Stephen';
+    it("Should set name, id, and email when created.", () => {
+      const name = "Stephen";
+      const id = "123";
+      const email = "sbullocks@gmail.com";
 
-            const newName = new Employee(name, '123', 'sbullocks@gmail.com').getName();
+      const obj = new Employee(name, id, email);
 
-            expect(name).toEqual(newName);
-        });
+      expect(obj.name).toEqual(name);
+      expect(obj.id).toEqual(id);
+      expect(obj.email).toEqual(email);
     });
-    // Test getId method.
-    describe('getId', () => {
-        it('should return an employee id', () => {
-            const id ='123';
+  });
 
-            const newId = new Employee('Stephen', id, 'sbullocks@gmail.com').getId();
+  describe("getName", () => {
+    it("Should return employee name.", () => {
+      const name = "Stephen";
 
-            expect(id).toEqual(newId);
-        });
+      const newName = new Employee(
+        name,
+        "123",
+        "sbullocks@gmail.com"
+      ).getName();
+
+      expect(name).toEqual(newName);
     });
-    // Test getEmail method.
-    describe('getEmail', () => {
-        it('should return an employee email', () => {
-            const email ='sbullocks@gmail.com';
+  });
 
-            const newEmail = new Employee('Stephen', '123', email).getEmail();
+  describe("getId", () => {
+    it("Should return an employee id number.", () => {
+      const id = "123";
 
-            expect(email).toEqual(newEmail);
-        });
+      const newId = new Employee("Stephen", id, "sbullocks@gmail.com").getId();
+
+      expect(id).toEqual(newId);
     });
-    // Test getRole method.
-    describe('getRole', () => {
-        it('should return an employee role', () => {
-            const role ='Employee';
+  });
 
-            const newRole = new Employee('Stephen', '123', 'sbullocks@gmail.com').getRole();
+  describe("getEmail", () => {
+    it("Should return an employee email address.", () => {
+      const email = "sbullocks@gmail.com";
 
-            expect(role).toEqual(newRole);
-        });
+      const newEmail = new Employee("Stephen", "123", email).getEmail();
+
+      expect(email).toEqual(newEmail);
     });
-})
+  });
+
+  describe("getRole", () => {
+    it("Should return an employee role.", () => {
+      const role = "Employee";
+
+      const newRole = new Employee(
+        "Stephen",
+        "123",
+        "sbullocks@gmail.com"
+      ).getRole();
+
+      expect(role).toEqual(newRole);
+    });
+  });
+});
