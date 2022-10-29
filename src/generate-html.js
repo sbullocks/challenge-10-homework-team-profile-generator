@@ -109,6 +109,6 @@ module.exports = (team) => {
         </div>    
               
     </body>
-    
+    <footer> This was created by Stephen B. </footer>
     </html>`;
 };
