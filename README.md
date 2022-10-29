@@ -8,6 +8,7 @@
 
   ## Table of Contents:
   * [Repo](#repo) 
+  * [Demo](#demo) 
   * [Installation](#installation)
   * [Usage](#usage)
   * [Contribution](#contribution)
@@ -18,6 +19,10 @@
 
   ## Repo
   Challenge 10 Homework Team Profile Generator
+
+  ## Demo
+  [Click Here to View Walk-Through Video](https://drive.google.com/file/d/1a6HU8PZ4kwK3IfJ3oF5biByk-SWcL6p6/view)
+
 
   ## Installation
   N/A
