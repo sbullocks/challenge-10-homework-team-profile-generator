@@ -21,7 +21,7 @@
   Challenge 10 Homework Team Profile Generator
 
   ## Demo
-  [Click Here to View Walk-Through Video](https://drive.google.com/file/d/1a6HU8PZ4kwK3IfJ3oF5biByk-SWcL6p6/view)
+  [Click Here to View Walk-Through Video](https://drive.google.com/file/d/1MsinXRlVWi-bQoqF5FRNTNPDix3V1GID/view)
 
 
   ## Installation
